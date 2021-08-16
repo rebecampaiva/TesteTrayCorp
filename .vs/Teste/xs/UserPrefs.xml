@@ -1,0 +1,37 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{22A493B1-A91B-410B-ABB2-3709FB008F60}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Views/Aerodromo/Edit.cshtml" Line="69" Column="24" />
+      <File FileName="Views/Aerodromo/Create.cshtml" />
+      <File FileName="Views/Aerodromo/Index.cshtml" />
+      <File FileName="wwwroot/css/site.css" />
+      <File FileName="Controllers/AerodromoController.cs" />
+      <File FileName="Views/Aeronave/Index.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MRO" expanded="True" selected="True">
+            <Node name="MRO" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Aerodromo" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MRO PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

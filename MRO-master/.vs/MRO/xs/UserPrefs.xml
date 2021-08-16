@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{22A493B1-A91B-410B-ABB2-3709FB008F60}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="Controllers/AeronaveController.cs" Line="52" Column="1" />
+      <File FileName="Views/Aeronave/Index.cshtml" Line="10" Column="74" />
+      <File FileName="Views/Aeronave/Create.cshtml" Line="91" Column="98" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="80" Column="71" />
+      <File FileName="wwwroot/js/site.js" Line="5" Column="1" />
+      <File FileName="wwwroot/css/site.css" Line="27" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MRO" expanded="True">
+            <Node name="MRO" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Aeronave" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MRO PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/rebecapaiva/Projects/MRO/MRO-master/Controllers/FamiliaController.cs" relfile="Controllers/FamiliaController.cs" line="47" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
