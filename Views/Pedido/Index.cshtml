@@ -1,0 +1,71 @@
+﻿@model IEnumerable<MRO.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Lista de Pedidos</h1>
+
+<p>
+    <button type="button" class="btn btn-warning"><a asp-action="Create">Adicionar Pedido </a></button>
+    
+</p>
+
+
+<table class="table" id="ProdutoTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PedidoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lanches.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Combo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+
+                @Html.DisplayFor(modelItem => item.PedidoId)
+
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Lanches.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Combo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PedidoId">Edit</a> |
+                <a asp-action="Details" class="details" asp-route-id="@item.PedidoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PedidoId">Delete</a>
+            </td>
+
+
+
+
+
+        </tr>
+}
+    </tbody>
+</table>
+
+<div class="modal" id="modal">
+
+</div>

@@ -1,0 +1,250 @@
+﻿@model MRO.Models.Pedido
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<div class="row">
+    <div class="col-md-2 col-xs-2">
+        <div class="form-group">
+            <span>Pedido: # @ViewBag.NumPedido</span>
+
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-6">
+    </div>
+        <div class="col-md-2 col-xs-2">
+            <div class="form-group">
+
+                <span id="QtdeItens">Qtd de Itens: </span>
+
+            </div>
+
+        </div>
+        <div class="col-md-2 col-xs-2">
+            <div class="form-group">
+
+                <span id="ValorPedido">Valor: R$ 0,00</span>
+
+            </div>
+
+        </div>
+    </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <div class="card" id="card1">
+                            <div class="card-header">
+                                <a href="#" id="AddLanche1">+</a>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+
+                                <div class="form-row">
+                                    <label asp-for="LancheId" class="control-label">Lanche</label>
+                                    <select asp-for="LancheId" class="form-control" asp-items="ViewBag.LancheId" id="Lanche1">
+                                        <option disabled selected>-- Selecione --</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label asp-for="Combo" class="control-label"></label>
+                                        <input asp-for="Combo" class="form-control" id="Combo1" disabled/>
+                                        <span asp-validation-for="Combo" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <label class="control-label">Quantidade</label>
+                                        <select class="custom-select" id="Qtde1">
+                                           
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" id="card2">
+                            <div class="card-header fa-pull-right">
+                                <a href="#" id="AddLanche2">+</a>
+
+                                <a href="#" id="SubLanche2">-</a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+
+                                <div class="form-row">
+                                    <label asp-for="LancheId" class="control-label">Lanche</label>
+                                    <select asp-for="LancheId" class="form-control" asp-items="ViewBag.LancheId">
+                                        <option disabled selected>-- Selecione --</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label asp-for="Combo" class="control-label"></label>
+                                        <input asp-for="Combo" class="form-control" />
+                                        <span asp-validation-for="Combo" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <label class="control-label">Quantidade</label>
+                                        <select class="custom-select">
+                                            <option selected>Selecione</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" id="card3">
+                            <div class="card-header">
+                                <a href="#" id="AddLanche3">+</a>
+
+                                <a href="#" id="SubLanche3">-</a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+
+                                <div class="form-row">
+                                    <label asp-for="LancheId" class="control-label">Lanche</label>
+                                    <select asp-for="LancheId" class="form-control" asp-items="ViewBag.LancheId">
+                                        <option disabled selected>-- Selecione --</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label asp-for="Combo" class="control-label"></label>
+                                        <input asp-for="Combo" class="form-control" />
+                                        <span asp-validation-for="Combo" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <label class="control-label">Quantidade</label>
+                                        <select class="custom-select">
+                                            <option selected>Selecione</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" id="card4">
+                            <div class="card-header">
+                                <a href="#" id="AddLanche4">+</a>
+
+                                <a href="#" id="SubLanche4">-</a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+
+                                <div class="form-row">
+                                    <label asp-for="LancheId" class="control-label">Lanche</label>
+                                    <select asp-for="LancheId" class="form-control" asp-items="ViewBag.LancheId">
+                                        <option disabled selected>-- Selecione --</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label asp-for="Combo" class="control-label"></label>
+                                        <input asp-for="Combo" class="form-control" />
+                                        <span asp-validation-for="Combo" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <label class="control-label">Quantidade</label>
+                                        <select class="custom-select">
+                                            <option selected>Selecione</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }

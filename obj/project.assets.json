@@ -9016,11 +9016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rebecapaiva\\source\\repos\\TesteTrayCorp\\Teste.csproj",
+      "projectUniqueName": "C:\\Users\\rebecapaiva\\source\\repos\\TesteFoxconn\\Teste.csproj",
       "projectName": "Teste",
-      "projectPath": "C:\\Users\\rebecapaiva\\source\\repos\\TesteTrayCorp\\Teste.csproj",
+      "projectPath": "C:\\Users\\rebecapaiva\\source\\repos\\TesteFoxconn\\Teste.csproj",
       "packagesPath": "C:\\Users\\rebecapaiva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rebecapaiva\\source\\repos\\TesteTrayCorp\\obj\\",
+      "outputPath": "C:\\Users\\rebecapaiva\\source\\repos\\TesteFoxconn\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rebecapaiva\\AppData\\Roaming\\NuGet\\NuGet.Config",

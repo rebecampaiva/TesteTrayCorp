@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MRO.Models.Ingrediente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Lista de Ingrediente</h1>
+
+<p>
+    <button type="button" class="btn btn-warning"><a asp-action="Create">Adicionar Ingrediente </a></button>
+    
+</p>
+
+
+<table class="table" id="ProdutoTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                
+                    @Html.DisplayFor(modelItem => item.Nome)
+              
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+               R$ @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IngredienteId">Edit</a> |
+                <a asp-action="Details" class="details" asp-route-id="@item.IngredienteId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IngredienteId">Delete</a>
+            </td>
+
+           
+
+           
+
+        </tr>
+}
+    </tbody>
+</table>
+
+<div class="modal" id="modal">
+
+</div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5gk1P/Gsthuwer9qwHIVMsnLj29pTTyNlRHL6lfz06w6y/T5432nBDGmbnYz11/UP6nUmjNPhXKjtWg8aft9ag==",
+  "dgSpecHash": "p1YvP+UgAZjwh4XUq5ej4+EVH+8zPEmdtyJIoOqGuEURdtVPkjHA25q+c6fK0RciXSjE2ibwqi1xMzH0ZV/wnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rebecapaiva\\source\\repos\\TesteTrayCorp\\Teste.csproj",
+  "projectFilePath": "C:\\Users\\rebecapaiva\\source\\repos\\TesteFoxconn\\Teste.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rebecapaiva\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rebecapaiva\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

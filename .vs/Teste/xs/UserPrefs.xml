@@ -1,25 +1,22 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{22A493B1-A91B-410B-ABB2-3709FB008F60}|Default">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{22A493B1-A91B-410B-ABB2-3709FB008F60}|MRO">
+  <MonoDevelop.Ide.ItemProperties.Teste PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../Users/rebecapaiva/Projects/MRO-master/Views/Aeronave/Index.cshtml">
     <Files>
-      <File FileName="Views/Aerodromo/Edit.cshtml" Line="69" Column="24" />
-      <File FileName="Views/Aerodromo/Create.cshtml" />
-      <File FileName="Views/Aerodromo/Index.cshtml" />
-      <File FileName="wwwroot/css/site.css" />
-      <File FileName="Controllers/AerodromoController.cs" />
-      <File FileName="Views/Aeronave/Index.cshtml" />
+      <File FileName="wwwroot/css/site.css" Line="1" Column="1" />
+      <File FileName="../../../../../../../Users/rebecapaiva/Projects/MRO-master/Views/Aeronave/Index.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MRO" expanded="True" selected="True">
-            <Node name="MRO" expanded="True">
-              <Node name="Data" expanded="True" />
+          <Node name="Teste" expanded="True">
+            <Node name="Teste" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Aerodromo" expanded="True" />
+                <Node name="Home" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="js" expanded="True" />
+                <Node name="css" expanded="True">
+                  <Node name="site.css" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

@@ -22,6 +22,14 @@ namespace MRO.Data
     
         public virtual DbSet<Produto> Produtos { get; set; }
 
+        public virtual DbSet<Pedido> Pedidos { get; set; }
+
+        public virtual DbSet<Ingrediente> Ingredientes { get; set; }
+
+        public virtual DbSet<Lanche> Lanches { get; set; }
+
+        //public virtual DbSet<LancheIngrediente> LancheIngredientes { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -43,6 +51,20 @@ namespace MRO.Data
                 entity.Property(e => e.Estoque).IsUnicode(false);
 
                 entity.Property(e => e.Valor).IsUnicode(false);
+            });
+
+            modelBuilder.Entity<Lanche>(entity =>
+            {
+                entity.Property(e => e.Nome).IsUnicode(false);
+
+                entity.Property(e => e.ValorBase).IsUnicode(false);
+
+                entity.Property(e => e.ImagemCaminho).IsUnicode(false);
+
+                entity.Property(e => e.Ativo).IsUnicode(false);
+
+
+               
             });
 
             OnModelCreatingPartial(modelBuilder);

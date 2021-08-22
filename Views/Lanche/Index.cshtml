@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MRO.Models.Lanche>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Index</h1>
+
+<p>
+    <button type="button" class="btn btn-warning"><a asp-action="Create">Adicionar Lanche </a></button>
+    
+</p>
+
+
+<table class="table" id="ProdutoTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorBase)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td id="content">
+                
+                    @Html.DisplayFor(modelItem => item.Nome)
+              
+
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorBase)
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.LancheId">Edit</a> |
+                <a asp-action="Details" class="details" asp-route-id="@item.LancheId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.LancheId">Delete</a>
+            </td>
+
+           
+
+           
+
+        </tr>
+}
+    </tbody>
+</table>
+
+<div class="modal" id="modal">
+
+</div>
